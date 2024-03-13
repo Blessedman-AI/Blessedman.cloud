@@ -117,7 +117,7 @@ const Portfolio = () => {
                      lg:pr-4 lg:pl-4 lg:text-lg bg-white
                       text-gray-600 font-semibold m-4 rounded"
                     >
-                      See Demo
+                      click here
                     </button>
                   </Link>
                 </div>
