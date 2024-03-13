@@ -62,15 +62,17 @@ const Portfolio = () => {
 
   return (
     <motion.div
-      className="h-full"
+      className="h-[calc(100vh-6rem)]"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
       <div className="h-[600vh] relative" ref={ref}>
-        <div className="w-screen h-[calc(100vh-6rem)] flex items-center
-         justify-center text-8xl text-center">
-          My Works
+        <div
+          className="w-screen h-[calc(100vh-6rem)] flex items-center
+         justify-center text-8xl text-center"
+        >
+          My Portfolio
         </div>
         <div
           className="sticky top-0 flex h-screen gap-4 items-center
@@ -110,9 +112,11 @@ const Portfolio = () => {
                     {item.desc}
                   </p>
                   <Link href={item.link} className="flex justify-end">
-                    <button className="p-2 text-sm md:p-4 md:text-md 
+                    <button
+                      className="p-2 text-sm md:p-4 md:text-md 
                      lg:pr-4 lg:pl-4 lg:text-lg bg-white
-                      text-gray-600 font-semibold m-4 rounded">
+                      text-gray-600 font-semibold m-4 rounded"
+                    >
                       See Demo
                     </button>
                   </Link>

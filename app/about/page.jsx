@@ -21,7 +21,7 @@ const About = () => {
 
   return (
     <motion.div
-      className="min-h-full "
+      className="h-[calc(100vh-6rem)] "
       initial={{ y: "-200vh" }}
       animate={{ y: "0" }}
       transition={{ duration: 1 }}
