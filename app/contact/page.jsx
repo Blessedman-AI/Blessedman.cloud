@@ -36,13 +36,13 @@ const Contact = () => {
 
   return (
     <motion.div
-      className="h-[calc(100vh-6rem)]  "
+      className=" min-h-full "
       initial={{ y: "-200vh" }}
       animate={{ y: "0" }}
       transition={{ duration: 1 }}
     >
       <div
-        className="h-full flex flex-col items-center justify-center lg:flex-row px-4
+        className="pb-24 pt-24  h-full flex flex-col items-center justify-center lg:flex-row px-4
        sm:px-8 md:px-12 lg:px-20 xl:px-48"
       >
         {/* TEXT CONTAINER */}
@@ -51,7 +51,7 @@ const Contact = () => {
          justify-center text-6xl"
         > */}
         <div
-          className="lg:h-full lg:w-1/2 flex items-center
+          className="mb-24 lg:h-full lg:w-1/2 flex items-center
          justify-center text-6xl"
         >
           <div>

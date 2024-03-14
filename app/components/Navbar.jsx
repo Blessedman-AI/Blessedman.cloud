@@ -2,19 +2,44 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import NavLink from "./NavLink";
 
 const links = [
-  { url: "/", title: "Home" },
   { url: "/about", title: "About" },
-  { url: "/portfolio", title: "Portfolio" },
+  { url: "/", title: "Home" },
   { url: "/contact", title: "Contact" },
+  { url: "/portfolio", title: "Portfolio" },
 ];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setIsMobile(window.innerWidth <= 768);
+  //   };
+
+  //   handleResize();
+
+  //   window.addEventListener("resize", handleResize);
+
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, []);
+
+  useEffect(() => {
+    if (window.innerWidth <= 768) {
+      setIsMobile(true);
+    }
+  });
+  console.log(isMobile);
+
+  const handleLinkClick = () => {
+    setActiveLink(true);
+  };
 
   const topVariants = {
     closed: {
@@ -52,7 +77,7 @@ const Navbar = () => {
       x: 0,
       transition: {
         when: "beforeChildren",
-        staggerChildren: 0.2,
+        staggerChildren: 0.1,
       },
     },
   };
@@ -116,7 +141,7 @@ const Navbar = () => {
         {/* MENU BUTTON */}
         <button
           className="w-10 h-8 flex flex-col justify-between
-         z-50 relative"
+         z-[51] relative"
           onClick={() => setOpen(!open)}
         >
           <motion.div
@@ -142,17 +167,21 @@ const Navbar = () => {
             variants={listVariants}
             initial="closed"
             animate="opened"
-            className="z-40 absolute top-0 left-0 w-screen h-screen
+            className=" z-[50] absolute top-0 left-0 w-screen h-screen
          bg-black text-white flex flex-col items-center
           justify-center gap-8 text-4xl"
           >
             {links.map((link) => (
               <motion.div
                 variants={listItemVariants}
-                className=""
+                className={`${
+                  isMobile && activeLink ? "hover:text-gray-500" : ""
+                }`}
                 key={link.title}
               >
-                <Link href={link.url}>{link.title}</Link>
+                <Link href={link.url} onClick={handleLinkClick}>
+                  {link.title}
+                </Link>
               </motion.div>
             ))}
           </motion.div>
