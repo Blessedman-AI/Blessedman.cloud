@@ -40,7 +40,7 @@ const items = [
   },
   {
     id: 5,
-    color: "from-red-200 to-purple-200",
+    color: "from-red-200 to-red-200",
     title: "Instagram clone",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
     img: "https://images.pexels.com/photos/16764124/pexels-photo-16764124/free-photo-of-programmer.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -77,12 +77,12 @@ const Portfolio = () => {
   // Calculate scroll extent based on number of items
   // const scrollExtent = `-${(numItems - 1) * 20}%`;
   const scrollExtent = isMobile
-    ? `-${(numItems - 1) * 20}%`
+    ? `-${(numItems - 1) * 22}%`
     : `-${(numItems - 1) * 20}%`;
   const x = useTransform(
     scrollYProgress,
     [0, 1],
-    [isMobile ? "20%" : "-20%", scrollExtent]
+    [isMobile ? "22%" : "-20%", scrollExtent]
   );
 
   return (
@@ -124,7 +124,7 @@ const Portfolio = () => {
               >
                 <div
                   className="lg:mt-32 lg:mb-32 flex flex-col
-                 gap-8 text-white"
+                 gap-8 text-black"
                 >
                   <h1
                     className="text-4xl font-bold
@@ -134,18 +134,18 @@ const Portfolio = () => {
                   </h1>
                   {/* <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]"> */}
                   <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[300px] lg:h-[105px] xl:w-[600px] xl:h-[420px]">
-                    <Image src={item.img} alt="" fill />
+                    <Image className="rounded-xl" src={item.img} alt="" fill />
                   </div>
                   <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {item.desc}
                   </p>
                   <Link href={item.link} className="flex justify-end">
                     <button
-                      className="p-2 text-sm md:text-md 
+                      className="pt-4 pb-4 pr-8 pl-8 text-md md:text-md 
                      lg:pr-4 lg:pl-4 lg:text-lg bg-white lg:pt-2 lg:pb-2
                       text-gray-600 font-semibold m-4 rounded"
                     >
-                      click here
+                      View Live site
                     </button>
                   </Link>
                 </div>
@@ -158,7 +158,7 @@ const Portfolio = () => {
         className=" pr-8 pl-8 bg-gradient-to-b from-blue-100 to-red-100 w-screen h-screen
        flex flex-col gap-8 items-center justify-center text-center"
       >
-        <h1 className="text-6xl md:text-8xl">Do you have a project?</h1>
+        <h1 className="text-3xl md:text-8xl">Do you have a project?</h1>
         <div className="relative">
           <motion.svg
             animate={{ rotate: 360 }}

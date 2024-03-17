@@ -32,7 +32,7 @@ const About = () => {
         ref={containerRef}
       >
         {/* TEXT CONTAINER */}
-        <div className="lg:flex-1 p-16 lg:p-24">
+        <div className="lg:flex-1 pt-16 px-8 lg:p-24">
           {/* BIO CONTAINER */}
           <div className=" flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY TITLE */}
