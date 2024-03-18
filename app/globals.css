@@ -21,3 +21,7 @@ body {
 .image-container {
   position: static;
 }
+
+.overflow-hidden {
+  overflow: hidden;
+}

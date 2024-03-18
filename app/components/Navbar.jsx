@@ -17,6 +17,41 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [activeLink, setActiveLink] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
+  
+
+  // useEffect(() => {
+  //   if (open) {
+  //     document.body.classList.add("overflow-hidden"); // Add class to disable scrolling
+  //   } else {
+  //     document.body.classList.remove("overflow-hidden"); // Remove class to enable scrolling
+  //   }
+
+  //   return () => {
+  //     document.body.classList.remove("overflow-hidden"); // Clean up: ensure class is removed when component unmounts
+  //   };
+  // }, [open]);
+
+  useEffect(() => {
+    const handleBodyScroll = () => {
+      if (open) {
+        document.body.classList.add("overflow-hidden"); // Add class to disable scrolling
+      } else {
+        document.body.classList.remove("overflow-hidden"); // Remove class to enable scrolling
+      }
+    };
+
+    handleBodyScroll(); // Initial setup when component mounts
+
+    // Add event listener for further changes
+    window.addEventListener("resize", handleBodyScroll);
+
+    return () => {
+      document.body.classList.remove("overflow-hidden"); // Clean up: ensure class is removed when component unmounts
+      window.removeEventListener("resize", handleBodyScroll); // Remove event listener when component unmounts
+    };
+  }, [open]); // Re-run effect when 'open' state changes
+
+  // Rest of your component code
 
   // useEffect(() => {
   //   const handleResize = () => {
@@ -137,7 +172,7 @@ const Navbar = () => {
       </div>
 
       {/* {Responsive menu} */}
-      <div className="md:hidden">
+      <div className="disable-scrolling md:hidden overflow-y-hidden">
         {/* MENU BUTTON */}
         <button
           className="w-10 h-8 flex flex-col justify-between

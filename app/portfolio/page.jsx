@@ -92,6 +92,7 @@ const Portfolio = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
+      {/* <div className="h-[calc(100vh-6rem)]"> </div> */}
       <div className="h-[600vh] relative" ref={ref}>
         <div
           className="w-screen h-[calc(100vh-6rem)] flex items-center
@@ -105,11 +106,6 @@ const Portfolio = () => {
          overflow-hidden"
         >
           <motion.div style={{ x }} className="flex ">
-            {/* <div
-              className="h-screen w-screen flex items-center 
-            justify-center bg-gradient-to-r from-purple-300
-             to-red-300"
-            /> */}
             <div
               className="  h-screen lg:w-[50%] flex items-center 
             justify-center bg-gradient-to-r from-purple-200
@@ -132,8 +128,11 @@ const Portfolio = () => {
                   >
                     {item.title}
                   </h1>
-                  {/* <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]"> */}
-                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[300px] lg:h-[105px] xl:w-[600px] xl:h-[420px]">
+
+                  <div
+                    className="relative w-80 h-56 md:w-96 md:h-64 
+                  lg:w-[300px] lg:h-[105px] xl:w-[600px] xl:h-[420px]"
+                  >
                     <Image className="rounded-xl" src={item.img} alt="" fill />
                   </div>
                   <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">

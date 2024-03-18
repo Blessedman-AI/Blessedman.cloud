@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
 import { motion } from "framer-motion";
@@ -7,7 +7,14 @@ import { motion } from "framer-motion";
 const Contact = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const text = "Say Hello";
+
+  useEffect(() => {
+    if (window.innerWidth <= 768) {
+      setIsMobile(true);
+    }
+  });
 
   const form = useRef();
 
@@ -36,14 +43,15 @@ const Contact = () => {
 
   return (
     <motion.div
-      className=" min-h-full "
+      className=" h-[calc(100vh-6rem)] min-h-screen "
       initial={{ y: "-200vh" }}
       animate={{ y: "0" }}
       transition={{ duration: 1 }}
     >
       <div
-        className="pb-24 pt-24  h-full flex flex-col items-center justify-center lg:flex-row px-4
-       sm:px-8 md:px-12 lg:px-20 xl:px-48"
+        className="pb-24 pt-24  h-full flex flex-col items-center
+         justify-center lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 
+         xl:px-48"
       >
         {/* TEXT CONTAINER */}
         {/* <div
@@ -51,7 +59,7 @@ const Contact = () => {
          justify-center text-6xl"
         > */}
         <div
-          className="mb-24 lg:h-full lg:w-1/2 flex items-center
+          className="mb-14 lg:mb-0 lg:h-full lg:w-1/2 flex items-center
          justify-center text-6xl"
         >
           <div>
@@ -73,20 +81,16 @@ const Contact = () => {
           </div>
         </div>
         {/* FORM CONTAINER */}
-        {/* <form
-          // onSubmit={sendEmail}
-          ref={form}
-          className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
-        > */}
+
         <form
           onSubmit={sendEmail}
           ref={form}
-          className=" lg:h-full lg:w-1/2 lg:bg-red-50 rounded-xl text-xl
-           flex flex-col gap-8 justify-center p-24"
+          className=" h-2/3 lg:h-2/3 lg:w-1/2 lg:bg-red-50 rounded-xl
+           text-xl flex flex-col gap-8 justify-center p-24"
         >
           <span>Hello Blessedman,</span>
           <textarea
-            rows={6}
+            rows={isMobile ? 4 : 6}
             className="bg-transparent border-b-2 border-b-black 
             outline-none resize-none"
             name="user_message"
