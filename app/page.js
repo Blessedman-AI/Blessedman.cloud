@@ -12,7 +12,7 @@ export default function Homepage() {
       transition={{ duration: 1 }}
     >
       <div
-        className="pl-4 gap-12 flex flex-col md:flex-row h-full  w-full  min-h-full
+        className="overflow-hidden spl-4 gap-12 flex flex-col md:flex-row h-full  w-full  min-h-full
        items-center justify-around"
       >
         {/* IMAGE CONTAINER */}{" "}

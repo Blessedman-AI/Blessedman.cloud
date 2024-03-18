@@ -28,7 +28,7 @@ const About = () => {
     >
       {/* CONTAINER */}
       <div
-        className=" h-full w-full overflow-y-scroll lg:flex "
+        className="py-16 h-full w-full overflow-y-scroll lg:flex "
         ref={containerRef}
       >
         {/* TEXT CONTAINER */}
@@ -36,7 +36,7 @@ const About = () => {
           {/* BIO CONTAINER */}
           <div className=" flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY TITLE */}
-            <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
+            <h1 className="font-bold text-2xl">ABOUT ME</h1>
 
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">

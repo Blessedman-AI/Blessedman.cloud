@@ -87,7 +87,7 @@ const Portfolio = () => {
 
   return (
     <motion.div
-      className="h-[calc(100vh-6rem)]"
+      className="h-[calc(100vh-6rem)] min-h-full"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
@@ -154,10 +154,10 @@ const Portfolio = () => {
         </div>
       </div>
       <div
-        className=" pr-8 pl-8 bg-gradient-to-b from-blue-100 to-red-100 w-screen h-screen
-       flex flex-col gap-8 items-center justify-center text-center"
+        className="pt-8 pr-8 pl-8 bg-gradient-to-b from-blue-100
+         to-red-100 w-screen h-screen flex flex-col gap-8 items-center justify-center text-center"
       >
-        <h1 className="text-3xl md:text-8xl">Do you have a project?</h1>
+        <h1 className="text-3xl md:text-6xl">Do you have a project?</h1>
         <div className="relative">
           <motion.svg
             animate={{ rotate: 360 }}

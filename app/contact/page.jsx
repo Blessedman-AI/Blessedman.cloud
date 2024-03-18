@@ -43,13 +43,13 @@ const Contact = () => {
 
   return (
     <motion.div
-      className=" h-[calc(100vh-6rem)] min-h-screen "
+      className=" h-[calc(100vh-6rem)] min-h-screen overflow-y-hidden"
       initial={{ y: "-200vh" }}
       animate={{ y: "0" }}
       transition={{ duration: 1 }}
     >
       <div
-        className="pb-24 pt-24  h-full flex flex-col items-center
+        className="overflow-y-hidden pb-24 pt-24  h-full flex flex-col items-center
          justify-center lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 
          xl:px-48"
       >
@@ -85,7 +85,7 @@ const Contact = () => {
         <form
           onSubmit={sendEmail}
           ref={form}
-          className=" h-2/3 lg:h-2/3 lg:w-1/2 lg:bg-red-50 rounded-xl
+          className=" h-full  lg:w-1/2 lg:bg-red-50 rounded-xl
            text-xl flex flex-col gap-8 justify-center p-24"
         >
           <span>Hello Blessedman,</span>
