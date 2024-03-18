@@ -28,7 +28,7 @@ const About = () => {
     >
       {/* CONTAINER */}
       <div
-        className="py-16 h-full w-full overflow-y-scroll lg:flex "
+        className="py-16 h-full w-full overflow-x-hidden overflow-y-scroll lg:flex "
         ref={containerRef}
       >
         {/* TEXT CONTAINER */}

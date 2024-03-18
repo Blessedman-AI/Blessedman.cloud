@@ -39,7 +39,7 @@ export default function Homepage() {
         {/* TEXT CONTAINER */}
         <div className="flex-shrink pt-8 flex flex-col max-w-[800px]  flex-1 pr-14">
           <h1 className="text-3xl md:text-6xl font-bold">
-            Crafting Digital Experiences, Designing Tomorrow.
+            Crafting Digital Experiences, Designing Tomorrow
           </h1>
           <p className=" pt-2 md:text-xl">
             Welcome to my digital canvas, where innovation and creativity
