@@ -14,7 +14,7 @@ export default function Homepage() {
     >
       <Card
         heading={
-          <WavyText text="Welcome." fontSize="text-7xl lg:text-8xl" />
+          <WavyText text="Welcome." fontSize="text-5xl lg:text-8xl" />
         }
         desc1="My name name is Blessedman Igbedion I'm a full-stack developer
         based in Nigeria. I have developed many typed of web applications from
