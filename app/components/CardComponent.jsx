@@ -35,7 +35,7 @@ const Card = ({ heading, desc1, desc2, link }) => {
           <div
             className=" order-1 lg:order-2 flex flex-col 
         lg:justify-center items-start justify-start lg:items-start
-         basis-1/5  mb-[6rem] mt-[4rem] lg:my-0 max-h-[90%]"
+         basis-1/5  mb-[6rem] mt-[4rem] lg:my-0 "
           >
             <ProjectLinks />
           </div>

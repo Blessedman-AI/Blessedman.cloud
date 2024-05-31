@@ -16,7 +16,7 @@ export default function Homepage() {
         heading={
           <WavyText text="Welcome" fontSize="text-5xl lg:text-7xl" />
         }
-        desc1="My name name is Blessedman Igbedion I'm a full-stack developer
+        desc1="My name name is Blessedman Igbedion. I'm a full-stack developer
         based in Nigeria. I have developed many typed of web applications from
         streaming services to eCommerce platforms"
         desc2="I'm passionate about functional interfaces and intuitively
