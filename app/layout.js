@@ -14,7 +14,24 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} `}>{children}</body>
+      <body className={`${montserrat.className} `}>
+        {children}
+
+        <Script
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.CLICKINY_EMBED_CONFIG = {
+             id: "9cdf8ed2-a58d-4227-a335-0f3971d140ba"
+            }
+          `,
+          }}
+        />
+        <Script
+          src="https://app.clickiny.com/js/clickiny.button.js"
+          strategy="afterInteractive"
+        />
+      </body>
     </html>
   );
 }
