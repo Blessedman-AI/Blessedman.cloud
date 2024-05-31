@@ -2,20 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .children {
-  height: calc(100vh - 6rem);
-} */
-
-/* .home-container {
-  height: 100vh;
-} */
-
+/* Root Color */
 body {
-  margin: 0;
+  background-color: #5b5c60;
+  color: #333; /* Fallback for text color if not set elsewhere */
+  /* font-family: Arial, sans-serif; */
+  /* font-family: "Montserrat-Regular", sans-serif !important; */
+  line-height: 1.6;
   padding: 0;
-  height: 100%;
-  min-height: 100%;
-  overflow-x: hidden;
+  margin: 0; /* Remove default margin from body */
+}
+
+/* Container Background */
+.container {
+  margin: 0;
+  background-color: #101011;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #d1d1d1;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: #d1d1d1; /* Set link color */
+}
+
+a:hover {
+  color: #d1d1d1;
+}
+
+.clickiny-inline-block {
+  display: block !important;
 }
 
 .image-container {
