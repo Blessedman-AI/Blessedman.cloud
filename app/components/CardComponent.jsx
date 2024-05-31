@@ -23,7 +23,7 @@ const Card = ({ heading, desc1, desc2, link }) => {
       >
         <div
           className="  flex flex-col lg:flex-row min-w-[100%]
-          xl:mt-[4rem] lg:justify-between "
+          xl:mt-[8rem] lg:justify-between "
         >
           <div
             className="order-2 lg:order-1 sm:max-w-[100%] md:max-w-[60%]
