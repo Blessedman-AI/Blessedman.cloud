@@ -3,7 +3,6 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Script from "next/script";
 import NavBar from "./NavBar";
-
 import ProjectLinks from "./ProjectLinks";
 
 const Card = ({ heading, desc1, desc2, link }) => {
