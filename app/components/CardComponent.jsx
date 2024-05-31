@@ -21,7 +21,7 @@ const Card = ({ heading, desc1, desc2, link }) => {
         className=" h-full flex flex-col items-center justify-center
       "
       >
-        <div className="  flex flex-col lg:flex-row min-w-[100%] xl:mt-[5rem] lg:justify-between ">
+        <div className="  flex flex-col lg:flex-row min-w-[100%] lg:h-[50%] xl:mt-[5rem] lg:justify-between ">
           <div
             className="order-2 lg:order-1 sm:max-w-[100%] md:max-w-[60%]
          justify-start basis-3/5"
