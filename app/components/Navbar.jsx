@@ -4,6 +4,7 @@ import Link from "next/link";
 import github from "../assets/githubIcon.png";
 import gmail from "../assets/gmailIcon.png";
 import linkedIn from "../assets/linkedInIcon.png";
+import logo from "../assets/logo.png";
 
 const images = [
   {
@@ -23,7 +24,7 @@ const images = [
   },
 ];
 
-const NavBar = () => {
+const Navbar = () => {
   return (
     <div
       className=" bg-[#101011] 
@@ -32,7 +33,12 @@ const NavBar = () => {
     >
       <div className="flex justify-start">
         <Link href="/">
-          <Image src={github} alt="github" width={44} height={44} />
+          <Image
+            src={logo}
+            alt="blessedman logo"
+            width={54}
+            height={54}
+          />
         </Link>
       </div>
 
@@ -54,4 +60,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;

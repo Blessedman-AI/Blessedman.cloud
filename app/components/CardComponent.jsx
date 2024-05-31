@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Script from "next/script";
-import NavBar from "./NavBar";
+import Navbar from "./Navbar";
 import ProjectLinks from "./ProjectLinks";
 
 const Card = ({ heading, desc1, desc2, link }) => {
@@ -15,7 +15,7 @@ const Card = ({ heading, desc1, desc2, link }) => {
         bg-[#101011] lg:pb-12 pb-14 rounded-none lg:rounded-[28px]
          border-none lg:border-2  lg:border-gray-400"
     >
-      <NavBar />
+      <Navbar />
 
       <div
         className=" h-full flex flex-col items-center justify-center
