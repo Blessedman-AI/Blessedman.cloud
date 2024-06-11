@@ -26,7 +26,7 @@ const images = [
 
 const Navbar = () => {
   return (
-    <div
+    <header
       className=" bg-[#101011] 
       rounded-[32px] w-full  
        flex items-center justify-between pt-6  "
@@ -56,7 +56,7 @@ const Navbar = () => {
           </Link>
         ))}
       </div>
-    </div>
+    </header>
   );
 };
 

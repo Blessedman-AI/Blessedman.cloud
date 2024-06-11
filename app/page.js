@@ -8,7 +8,7 @@ import WavyText from "./components/WavyText";
 
 export default function Homepage() {
   return (
-    <div
+    <section
       className="h-screen flex lg:items-center 
     lg:justify-center "
     >
@@ -16,12 +16,14 @@ export default function Homepage() {
         heading={
           <WavyText text="Welcome" fontSize="text-5xl lg:text-7xl" />
         }
-        desc1="My name name is Blessedman Igbedion. I'm a full-stack developer
-        based in Nigeria. I have developed many typed of web applications from
-        streaming services to eCommerce platforms"
-        desc2="I'm passionate about functional interfaces and intuitively
-        implemented UX."
+        desc1="My name is Blessedman Igbedion – A Software 
+        Engineer with a strong  focus on JavaScript and related technologies 
+        and a proven track record in developing and deploying robust production-grade
+        applications."
+        desc2="I'm passionate about problem-solving, 
+         optimising performance, and delivering high-quality, 
+         scalable solutions."
       />
-    </div>
+    </section>
   );
 }

@@ -15,22 +15,24 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${montserrat.className} `}>
-        {children}
+        <main className="max-w-screen-2xl">
+          {children}
 
-        <Script
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
+          <Script
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
             window.CLICKINY_EMBED_CONFIG = {
              id: "9cdf8ed2-a58d-4227-a335-0f3971d140ba"
             }
           `,
-          }}
-        />
-        <Script
-          src="https://app.clickiny.com/js/clickiny.button.js"
-          strategy="afterInteractive"
-        />
+            }}
+          />
+          <Script
+            src="https://app.clickiny.com/js/clickiny.button.js"
+            strategy="afterInteractive"
+          />
+        </main>
       </body>
     </html>
   );
