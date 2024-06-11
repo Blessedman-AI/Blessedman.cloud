@@ -16,7 +16,7 @@ export default function Homepage() {
         heading={
           <WavyText text="Welcome" fontSize="text-5xl lg:text-7xl" />
         }
-        desc1="My name is Blessedman Igbedion – A Software 
+        desc1="My name is Blessedman Igbedion. A Software 
         Engineer with a strong  focus on JavaScript and related technologies 
         and a proven track record in developing and deploying robust production-grade
         applications."
