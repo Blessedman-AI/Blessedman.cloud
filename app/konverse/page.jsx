@@ -25,7 +25,7 @@ const Konverse = () => {
            and reflection on various subjects."
         link={
           <Link
-            href="https://konverse-v1.vercel.app/"
+            href="https://konverse-one.vercel.app/"
             target="_blank"
             className="underline font-medium"
           >
