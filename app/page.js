@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import Script from "next/script";
+
 import Card from "./components/CardComponent";
 
 import WavyText from "./components/WavyText";
