@@ -46,21 +46,6 @@ const Card = ({ heading, desc1, desc2, link }) => {
      lg:justify-end mt-16"
       >
         <p className="">© {year} blessedman.cloud</p>
-        <Script
-          className="flex"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.CLICKINY_EMBED_CONFIG = {
-             id: "9cdf8ed2-a58d-4227-a335-0f3971d140ba"
-            }
-          `,
-          }}
-        />
-        <Script
-          src="https://app.clickiny.com/js/clickiny.button.js"
-          strategy="afterInteractive"
-        />
       </footer>
     </div>
   );
