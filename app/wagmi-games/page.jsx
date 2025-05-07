@@ -3,7 +3,7 @@ import Card from "../components/CardComponent";
 import WavyText from "../components/WavyText";
 import Link from "next/link";
 
-const Konverse = () => {
+const WagmiGames = () => {
   return (
     <div
       className="h-screen  flex lg:items-center 
@@ -12,20 +12,16 @@ const Konverse = () => {
       <Card
         heading={
           <WavyText
-            text="Konverse"
+            text="WAGMI Games"
             fontSize="text-4xl text-3xl"
             fontWeight="font-semibold"
           />
         }
         fontSize="4xl"
-        desc1="Konverse is a blog platform built with Next.js, presenting a
-         collection of content yet to be filled. Designed with simplicity
-          in mind, Converse serves as a canvas for future thoughts and ideas.
-           Stay tuned as this space evolves to become a source of inspiration 
-           and reflection on various subjects."
+        desc1="WAGMI Games is a pioneering Web3 entertainment platform that redefines the gaming and entertainment landscape. The aim is to create a vibrant ecosystem that brings together gamers, content creators, and enthusiasts from across the globe, offering them a unique blend of compelling gameplay, digital collectibles, and rich storytelling experiences."
         link={
           <Link
-            href="https://konverse-one.vercel.app/"
+            href="https://www.wagmigamesapp.com/"
             target="_blank"
             className="underline font-medium"
           >
@@ -37,4 +33,4 @@ const Konverse = () => {
   );
 };
 
-export default Konverse;
+export default WagmiGames;

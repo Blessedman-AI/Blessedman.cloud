@@ -18,9 +18,7 @@ const Clickiny = () => {
           />
         }
         fontSize="4xl"
-        desc1="Clickiny is a freemium service which enables online 
-        business owners  connect seamlessly with customers and provide 
-        support in real-time using a WhatsApp Chat Widget."
+        desc1="Clickiny is a powerful platform for creating online forms, surveys, and quizzes designed for businesses, educators, job seekers, and more. It helps collect insights, automate processes, and enhance engagement"
         link={
           <Link
             href="https://clickiny.com/"

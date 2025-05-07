@@ -45,7 +45,7 @@ const Card = ({ heading, desc1, desc2, link }) => {
         className="h-[1rem] flex lg:mt-14 justify-start lg:items-end
      lg:justify-end mt-16"
       >
-        <p className="">© {year} blessedman.cloud</p>
+        <p className="">© {year} Blessedman A.I</p>
       </footer>
     </div>
   );
