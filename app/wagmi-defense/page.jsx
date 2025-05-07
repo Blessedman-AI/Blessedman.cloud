@@ -17,7 +17,7 @@ const WagmiDefense = () => {
             fontWeight="font-semibold"
           />
         }
-        desc1="WAGMI Defense is an online, card-based strategy game in which two players build decks of six cards—comprising heroes, troops, air units and special power cards—and battle to destroy the opponent’s command centre. Each card can be upgraded (using the basic resource NiFe) up to level 10, and evolved through sacrificing duplicates to reach higher rarities (Common → Rare → Epic → Legendary). Players earn medals by winning matches, which determine their rank in seasonal PvP leaderboards (seasons last roughly three months and then reset)."
+        desc1="WAGMI Defense is an online, card-based strategy game in which two players build decks of six cards—comprising heroes, troops, air units and special power cards—and battle to destroy the opponent’s command centre. Each card can be upgraded (using the basic resource NiFe) up to level 10, and evolved through sacrificing duplicates to reach higher rarities (Common → Rare → Epic → Legendary)."
         link={
           <Link
             href="https://creators.wagmidefense.com/"
